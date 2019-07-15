@@ -37,19 +37,20 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="lyo-iK-uXD"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="RB0-tf-ZJD">
                             <connections>
-                                <segue destination="qRE-j7-WUB" kind="show" id="bpM-2Z-27e"/>
+                                <action selector="addImageTapped:" destination="DXg-Ed-oCL" id="P7b-DF-JgB"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oI5-7U-MCj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="DXg-Ed-oCL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="555.07246376811599" y="172.76785714285714"/>
         </scene>
-        <!--add new photo-->
+        <!--Title-->
         <scene sceneID="D83-Qw-48w">
             <objects>
-                <viewController id="qRE-j7-WUB" sceneMemberID="viewController">
+                <viewController id="qRE-j7-WUB" customClass="addPhotoViewController" customModule="ViewFinder" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GDB-2d-awT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,6 +71,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="photo library"/>
+                                <connections>
+                                    <action selector="photoLibraryTapped:" destination="qRE-j7-WUB" eventType="touchUpInside" id="n6h-n1-kqJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKq-w8-6ly">
                                 <rect key="frame" x="165" y="436" width="66" height="52"/>
@@ -82,18 +86,27 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="albums"/>
+                                <connections>
+                                    <action selector="albumTapped:" destination="qRE-j7-WUB" eventType="touchUpInside" id="kyR-LA-bqp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qux-Pm-DE2">
                                 <rect key="frame" x="150" y="611" width="96" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="camera"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="qRE-j7-WUB" eventType="touchUpInside" id="cRf-oK-kgt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="IcX-4A-HWp"/>
                     </view>
-                    <navigationItem key="navigationItem" title="add new photo" id="WvT-Y3-jVF"/>
+                    <navigationItem key="navigationItem" title="Title" id="Vub-qz-NSB"/>
+                    <connections>
+                        <outlet property="newImage" destination="mtw-1h-qwp" id="1cQ-1G-yJV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LOf-Nu-fKk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

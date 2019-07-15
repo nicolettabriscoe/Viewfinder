@@ -12,6 +12,7 @@
 		18E7822422DD1A5100E11F45 /* ViewFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18E7822222DD1A5100E11F45 /* ViewFinder.xcdatamodeld */; };
 		18E7822622DD1A5300E11F45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E7822522DD1A5300E11F45 /* Assets.xcassets */; };
 		18E7822922DD1A5300E11F45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E7822722DD1A5300E11F45 /* LaunchScreen.storyboard */; };
+		18E7823122DD2B4400E11F45 /* addPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E7823022DD2B4400E11F45 /* addPhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		18E7822522DD1A5300E11F45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18E7822822DD1A5300E11F45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18E7822A22DD1A5300E11F45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E7823022DD2B4400E11F45 /* addPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addPhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		18E7821A22DD1A5100E11F45 /* ViewFinder */ = {
 			isa = PBXGroup;
 			children = (
+				18E7823022DD2B4400E11F45 /* addPhotoViewController.swift */,
 				18E7821B22DD1A5100E11F45 /* AppDelegate.swift */,
 				18E7821F22DD1A5100E11F45 /* Main.storyboard */,
 				18E7822522DD1A5300E11F45 /* Assets.xcassets */,
@@ -137,6 +140,7 @@
 			files = (
 				18E7822422DD1A5100E11F45 /* ViewFinder.xcdatamodeld in Sources */,
 				18E7821C22DD1A5100E11F45 /* AppDelegate.swift in Sources */,
+				18E7823122DD2B4400E11F45 /* addPhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
